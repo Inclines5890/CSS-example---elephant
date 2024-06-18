@@ -1,0 +1,80 @@
+/*layout*/
+
+body{
+    font-size: 1.125rem;
+    color: #707070;
+    margin:0;
+}
+
+/*topography*/
+h1{
+    /*based on root element so 16 x 3 = 48px font size*/
+    font-size: 3rem;
+    color: #212614;
+    text-align: center;
+}
+
+h1 span{
+    color: #b7832f;
+}
+
+h2{
+    font-size: 1.5rem;
+}
+
+p{
+    margin-top: 0;
+}
+
+.container{
+    max-width: 980px;
+    width: 95%;
+    /*centers container contents */
+    margin: 0 auto;
+}
+
+img{
+    /*margin does not work on inline elements so we set the image to block ****/
+    display:block;
+    /*all margins set to auto take available space on right and distribute it evenly on left and right is what we want*/
+    margin: 0 auto;
+    max-width: 60%;
+}
+
+/*column is taking all space of 980px (container parent ^^^)*/
+.columns{
+    display:flex;
+    /*takes extra space and distributes it around row items 
+    first column
+    20 % + 45 % + 20 % -> 85% still have 15% of space left which spaces out our content
+    
+    NOTE: spacing is not exactly the same on the second row
+    since we have 70% + 20 % = 90% with 10% space left to be distributed
+    */
+    /*causes the column containers to shrink down to the content, not growing to match the 
+        largest container 
+    */
+    align-items: flex-start;
+    /*MAIN AXIS horiztonal*/
+    justify-content: space-between;
+    margin: 1em 0;
+}
+
+.col-bg{
+    background-color: #312614;
+    color:#FFF;
+    padding: 1em;
+}
+
+.col-1{
+    /*25% of the container so 25% of 980 px*/
+    width:20%;
+}
+
+.col-2{
+    width: 45%;
+}
+
+.col-3{
+    width: 70%;
+}

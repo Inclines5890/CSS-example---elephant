@@ -7,9 +7,19 @@ body{
 }
 
 /*
-@media (min-width: 400px){
+
+from a minimum width of 400px up to 649px
+
+@media (min-width: 400px and (max-width: 649px){
     body{
         background: purple;
+    }
+}
+
+@media (min-width: 650px){
+
+    body{
+        background:orange;
     }
 }
 */

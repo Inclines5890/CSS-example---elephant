@@ -60,6 +60,7 @@ img{
 }
 
 /*column is taking all space of 980px (container parent ^^^)*/
+/*flex container*/
 .columns{
     display:flex;
     /*takes extra space and distributes it around row items 
@@ -95,4 +96,19 @@ img{
 
 .col-3{
     width: 70%;
+}
+
+/*NOTE: MEDIA QUERIES CAN BE OVERWRITTEN BY THEIR PLACEMENT IN THE CSS DOCUMENT*/
+@media (max-width: 600px){
+    .columns{
+        flex-direction: column;
+    }
+
+    .col-1,
+    .col-2,
+    .col-3{
+        width:100%;
+        padding-left:1em;
+        padding-right:1em;
+    }
 }

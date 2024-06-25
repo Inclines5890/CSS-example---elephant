@@ -1,0 +1,106 @@
+
+body {
+    margin: 0;
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+    color: #2e354f;
+}
+
+img{
+    width:400px;
+    height: 300px;
+}
+h1,
+h2,
+strong {
+    font-weight: 900;
+}
+
+/* Typography */
+
+h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+h2 {
+    font-size: 24px;
+    color: #ef5839;
+}
+
+a {
+    color: #ef5839;
+}
+
+a:hover,
+a:focus {
+    color: #d4b44c;
+}
+
+/* Buttons */
+
+.btn {
+    display: inline-block;
+    padding: 10px 25px;
+    text-decoration: none;
+}
+
+.btn-accent {
+    background: #ef5839;
+    color: #fff;
+}
+
+.btn-accent:hover {
+    color: #2e354f;
+    background: #d4b44c;
+}
+
+.btn-white {
+    background: #fff;
+    color: #2e354f;
+}
+
+.btn-white:hover {
+    color: #2e354f;
+    background: #999;
+}
+
+/* Layout */
+
+header {
+    background: #2e354f;
+    padding: 45px 0;
+    color: #fff;
+   
+}
+
+section {
+   
+    padding: 45px 0;
+}
+
+.container{
+    /*50% of page are our containers the other 50% is on the right and left of the center containers (25% 25%)
+    
+    the container is 50% of THE PARENT 50% of the section or header or footer ect... 
+    */
+    width: 90%;
+    /*container stops growing at 620px*/
+    max-width: 620px;
+    /*holds content in center of page*/
+    margin: 0 auto;
+}
+
+.section-two {
+    background: #2e354f;
+    color: #fff;
+}
+
+/*1em -> match font size of parent
+  1.5em -> 150% of parent ect
+
+  this list is in section 1 -> changing section 1 font size will dictate this
+*/
+ul{
+    font-size: 1em;
+}
